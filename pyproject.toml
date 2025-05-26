@@ -18,5 +18,6 @@ dev = ["poethepoet>=0.34.0", "ruff>=0.11.11"]
 
 [tool.poe.tasks]
 dev = "granian --interface asgi src.main:app"
+start = "granian --interface asgi src.main:app"
 format = "ruff format ."
 lint = "ruff check --fix ."
